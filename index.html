@@ -10,8 +10,11 @@
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-light bg-white mb-4">
-        <div class="container">
+        <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand fw-semibold" href="#">Portafolio</a>
+            <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#aboutMeModal">
+                ¿Quién soy yo?
+            </button>
         </div>
     </nav>
     <main class="container py-5">
@@ -40,6 +43,25 @@
     </main>
     <footer class="text-center text-muted py-3 small">
         &copy;2025 - Sebastián Gallegos Frías
+    </footer>
+
+    <!-- Modal Sobre Mí -->
+    <div class="modal fade" id="aboutMeModal" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="aboutMeModalLabel">Sobre mí</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p>Hola, soy Sebastián Gallegos Frías, Ingeniero Civil en Informática con pasión por el desarrollo web y la tecnología. Me considero una persona proactiva, con ganas de aprender y enfrentar nuevos desafíos. Tengo experiencia en proyectos académicos y personales, y busco crecer profesionalmente en el área de desarrollo de software.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     </footer>
 </body>
 </html>
